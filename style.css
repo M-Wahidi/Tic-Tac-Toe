@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333;
+  flex-direction: column;
+}
+.info-container {
+  height: 5rem;
+  width: 19rem;
+  border: 1px solid rgb(172, 158, 158);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+  letter-spacing: 0.3rem;
+  font-size: 1.7rem;
+}
+.tic-tac-toe-boardContainer {
+  margin-top: 2rem;
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  outline: none;
+}
+.cell {
+  height: 33.33333%;
+  width: 33.33333%;
+  border: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+  outline: none;
+}
+.cell6,
+.cell7,
+.cell8 {
+  border-bottom: none;
+}
+.cell2,
+.cell5,
+.cell8 {
+  border-right: none;
+}
+.restartPage{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 320px;
+  background-color: rgba(210, 237, 93, 0.645);
+  display: none;
+
+}
+.activeRestartPage{
+  display: flex;
+}
+button{
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgb(140, 143, 157);
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in-out;
+}
+button:hover{
+  opacity: 0.8;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: skyblue;
+
+}
+.background{
+  opacity: 0.7;
+}
